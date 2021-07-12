@@ -1,6 +1,3 @@
-ESX = nil
-TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-
 RegisterCommand("autodestroy", function(source, args)
     local jugador = GetPlayerPed(-1)
     local x, y, z = table.unpack(GetEntityCoords(GetPlayersLastVehicle(jugador)))
